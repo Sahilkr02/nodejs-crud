@@ -1,0 +1,7 @@
+dev.js
+node_modules/
+.env
+*.log
+.htaccess
+*json/
+package-lock.json
