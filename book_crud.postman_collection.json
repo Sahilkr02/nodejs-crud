@@ -1,0 +1,165 @@
+{
+	"info": {
+		"_postman_id": "a9103c98-22e2-41be-8298-d4e3174424c6",
+		"name": "book_crud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26569242"
+	},
+	"item": [
+		{
+			"name": "Add New Book",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Python\",\r\n    \"author\": \"Sahil\",\r\n    \"summary\": \"this is dummy book\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/v1/crud/add-book",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"crud",
+						"add-book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Books",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/v1/crud/books-list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"crud",
+						"books-list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book Details",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/v1/crud/book-details/654a9a95c67efc6322c4981d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"crud",
+						"book-details",
+						"654a9a95c67efc6322c4981d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Book",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"PHP\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/v1/crud/update-book-details/654a9e8d8df6841cdf86a788",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"crud",
+						"update-book-details",
+						"654a9e8d8df6841cdf86a788"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Book",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/v1/crud/delete-book/654a9f9649c4e17aa80377ce",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"crud",
+						"delete-book",
+						"654a9f9649c4e17aa80377ce"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
